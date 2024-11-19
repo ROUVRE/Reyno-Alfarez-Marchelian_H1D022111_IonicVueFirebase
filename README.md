@@ -42,5 +42,9 @@ Data akun Google user (username, email, dan foto profile) akan ditampilkan pada 
 </ion-item>
 ```
 
-## Screenshot
+## Screenshot Login Page
+![Screenshot Login](screenshot_login-google.png) </br>
 
+## Screenshot Profile
+Note: Profile picture email saya memang hitam polos seperti itu, bukan karena gagal menampilkan foto </br>
+![Screenshot Login](screenshot_profile.png)
