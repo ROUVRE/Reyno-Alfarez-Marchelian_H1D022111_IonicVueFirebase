@@ -1,9 +1,10 @@
-# Tugas 9 Praktikum Mobile
+# Tugas 9 dan 10 Praktikum Mobile
 
 Nama: Reyno Alfarez Marchelian </br>
 NIM: H1D022111 </br>
 Shift B
 
+# Tugas 9
 ## Penjelasan Login
 
 1. Saat login, aplikasi akan memanggil layanan Firebase Authentication yang memungkinkan user untuk login menggunakan Google Sign-In
