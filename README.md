@@ -4,7 +4,7 @@ Nama: Reyno Alfarez Marchelian </br>
 NIM: H1D022111 </br>
 Shift B
 
-# Tugas 9
+# TUGAS 9
 ## Penjelasan Login
 
 1. Saat login, aplikasi akan memanggil layanan Firebase Authentication yang memungkinkan user untuk login menggunakan Google Sign-In
@@ -49,3 +49,44 @@ Data akun Google user (username, email, dan foto profile) akan ditampilkan pada 
 ## Screenshot Profile
 Note: Profile picture email saya memang hitam polos seperti itu, bukan karena gagal menampilkan foto </br>
 ![Screenshot Login](screenshot_profile.png)
+
+# TUGAS 10
+## Penjelasan CRUD
+
+## Cara Membuat APK dari Proyek Ionic
+1. Jalankan command berikut untuk menginstall package platform Android
+```
+ionic capacitor add android
+```
+
+2. Jalankan command berikut
+```
+ionic build
+```
+Kemudian, perangkat akan membuka Android Studio
+
+3. Tunggu sampai loading selesai
+
+4. Jalankan command berikut untuk menginstall dependencies aplikasi
+```
+ionic capacitor sync android
+```
+
+5. Generate key SHA1 yang akan digunakan untuk menyambungkan aplikasi ke Firebase dengan cara command berikut pada directory `/android`:
+```
+./gradlew signingReport
+```
+Kemudian, di terminal akan muncul data-data yang dihasilkan, termasuk key SHA1
+
+6. Tambahkan app Android pada Firebase Console
+    1. Buka Firebase Console
+    2. Buka 'Project Settings'
+    3. Di section 'Your apps', klik "Add app"
+    4. Tambahkan aplikasi Android dengan memilih logo Android
+    5. Ikuti langkah-langkah yang disajikan, isi kolom "Android package name" dengan app_id yang ada di file capacitor.config.ts, kemudian masukkan key SHA-1 yang sudah diberikan sebelumnya di kolom SHA-1
+    6. Klik "Register app"
+    7. Lanjut ke step berikutnya, download file google-services.json, kemudian taruh file tersebut di direktori `android/app`
+
+7. Kembali ke Android Studio, pilih menu `Build` > `Build App Bundle(s) / APK(s)` > `Build APK(s)`
+
+8. Android Studio akan membuat file APK, yang kemudian dapat ditemukan di direktori `android\app\build\outputs\apk\debug` dengan nama `app-debug.apk`
