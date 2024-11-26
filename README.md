@@ -82,11 +82,18 @@ Kemudian, di terminal akan muncul data-data yang dihasilkan, termasuk key SHA1
     1. Buka Firebase Console
     2. Buka 'Project Settings'
     3. Di section 'Your apps', klik "Add app"
-    4. Tambahkan aplikasi Android dengan memilih logo Android
-    5. Ikuti langkah-langkah yang disajikan, isi kolom "Android package name" dengan app_id yang ada di file capacitor.config.ts, kemudian masukkan key SHA-1 yang sudah diberikan sebelumnya di kolom SHA-1
-    6. Klik "Register app"
-    7. Lanjut ke step berikutnya, download file google-services.json, kemudian taruh file tersebut di direktori `android/app`
+    5. Tambahkan aplikasi Android dengan memilih logo Android
+       ![Screenshot Firebase Add App](firebase_add-app.png)
+    6. Ikuti langkah-langkah yang disajikan, isi kolom "Android package name" dengan `app_id` yang ada di file `capacitor.config.ts`, kemudian masukkan key SHA-1 yang sudah diberikan sebelumnya di kolom SHA-1
+       ![Screenshot Firebase Register App](firebase_register-app.png)
+    8. Klik "Register app"
+    9. Lanjut ke step berikutnya, download file `google-services.json`, kemudian taruh file tersebut di direktori `android/app`
+       ![Screenshot Firebase Config File](firebase_config-file.png)
+       ![Screenshot Firebase Lokasi Config File](firebase_lokasi-config-file.png)
 
 7. Kembali ke Android Studio, pilih menu `Build` > `Build App Bundle(s) / APK(s)` > `Build APK(s)`
+   ![Screenshot Build APK](build-apk.png)
 
-8. Android Studio akan membuat file APK, yang kemudian dapat ditemukan di direktori `android\app\build\outputs\apk\debug` dengan nama `app-debug.apk`
+9. Android Studio akan membuat file APK, yang kemudian dapat ditemukan di direktori `android\app\build\outputs\apk\debug` dengan nama `app-debug.apk`
+
+![Screenshot APK](screenshot-apk.jpg)
