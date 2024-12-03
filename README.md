@@ -52,6 +52,24 @@ Note: Profile picture email saya memang hitam polos seperti itu, bukan karena ga
 
 # TUGAS 10
 ## Penjelasan CRUD
+1. Tampilan Awal List To-Do
+![Screenshot Awal](screenshot_awal.png)
+
+2. Add To-Do
+![Screenshot Add TODO](screenshot_add-todo.png)
+![Screenshot Added New TODO](screenshot_added.png)
+
+3. Edit To-Do
+![Screenshot Edit Slider](screenshot_slider-1.png)
+![Screenshot Edit TODO](screenshot_edit.png)
+![Screenshot Edited TODO](screenshot_edited.png)
+
+4. Mark To-Do as Completed
+![Screenshot Completed TODO](screenshot_completed.png)
+
+5. Delete To-Do
+![Screenshot Delete Slider TODO](screenshot_slider-2.png)
+![Screenshot Deleted TODO](screenshot_deleted.png)
 
 ## Cara Membuat APK dari Proyek Ionic
 1. Jalankan command berikut untuk menginstall package platform Android
