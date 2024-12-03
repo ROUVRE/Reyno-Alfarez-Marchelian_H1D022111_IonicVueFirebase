@@ -52,24 +52,45 @@ Note: Profile picture email saya memang hitam polos seperti itu, bukan karena ga
 
 # TUGAS 10
 ## Penjelasan CRUD
-1. Tampilan Awal List To-Do
+### 1. Tampilan Awal List To-Do
 ![Screenshot Awal](screenshot_awal.png)
 
-2. Add To-Do
+Di sini data yang disimpan di Firestore akan diambil oleh API yang akan menampilkan data-data tersebut secara menurun berdasarkan atribut `updatedAt` data.
+
+### 2. Add To-Do
 ![Screenshot Add TODO](screenshot_add-todo.png)
+
+Untuk menambahkan data baru, klik tomboh panah di bagian kanan bawah layar di halaman utama.</br>
+Title dan description yang dimasukkan user akan disimpan oleh API ke Firestore beserta atribut tambahan `createdAt` dan `updatedAt`.
+
 ![Screenshot Added New TODO](screenshot_added.png)
 
-3. Edit To-Do
+Ketika todo berhasil ditambah, akan muncul di halaman utama seperti di gambar tersebut.
+
+### 3. Edit To-Do
 ![Screenshot Edit Slider](screenshot_slider-1.png)
+
+Untuk mengedit todo, geser todo ke kiri, kemudian pilih tombol edit yang berwarna biru.
+
 ![Screenshot Edit TODO](screenshot_edit.png)
+
+API akan menerima ID, title, dan description todo yang dipilih untuk diedit. Kemudian data baru yang dimasukan user akan diperbarui di Firestore beserta update atribut `updatedAt` untuk mencatat waktu terbaru.
+
 ![Screenshot Edited TODO](screenshot_edited.png)
 
-4. Mark To-Do as Completed
+### 4. Mark To-Do as Completed
 ![Screenshot Completed TODO](screenshot_completed.png)
 
-5. Delete To-Do
+Untuk menandakan todo sebagai completed, geser todo ke kiri, kemudian pilih tombol mark as completed yang berwarna hijau. Kemudian todo tersebut akan muncul di tab Completed.
+
+### 5. Delete To-Do
 ![Screenshot Delete Slider TODO](screenshot_slider-2.png)
+
+Untuk menghapus todo, geser todo ke kanan, kemudian pilih tombol hapus yang berwarna merah.
+
 ![Screenshot Deleted TODO](screenshot_deleted.png)
+
+API akan mengambil data todo berdasarkan ID. kemudian menghapusnya dari Firestore.
 
 ## Cara Membuat APK dari Proyek Ionic
 1. Jalankan command berikut untuk menginstall package platform Android
